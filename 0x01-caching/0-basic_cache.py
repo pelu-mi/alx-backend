@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-""" Module for task 1
+""" Module for task 0
 """
 BaseCaching = __import__('base_caching').BaseCaching
 
