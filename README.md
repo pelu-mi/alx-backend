@@ -1,1 +1,1 @@
-This folder is for ALX Backend concepts
+This repo is for ALX Backend concepts
