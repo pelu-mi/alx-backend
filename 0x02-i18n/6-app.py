@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-""" Module for task 7
+""" Module for task 6
 """
 
 import pytz
@@ -62,24 +62,11 @@ def get_locale() -> str:
     return request.accept_languages.best_match(app.config['LANGUAGES'])
 
 
-@babel.timezoneselector
-def get_timezone() -> str:
-    """ Get the timezone of the browser
-    """
-    timezone = request.args.get("timezone", None)
-    if not timezone and g.user:
-        timezone = g.user["timezone"]
-    try:
-        return pytz.timezone(timezone).zone
-    except pytz.exceptions.UnknownTimeZoneError:
-        return app.config["BABEL_DEFAULT_TIMEZONE"]
-
-
 @app.route("/")
 def get_index() -> str:
     """ Get the index page
     """
-    return render_template("7-index.html")
+    return render_template("6-index.html")
 
 
 if __name__ == "__main__":
