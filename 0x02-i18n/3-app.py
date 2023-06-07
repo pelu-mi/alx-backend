@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-""" Module for task 2
+""" Module for task 3
 """
 
 from flask import Flask, render_template, request
@@ -31,7 +31,7 @@ def get_locale() -> str:
 def get_index() -> str:
     """ Get the index page
     """
-    return render_template("2-index.html")
+    return render_template("3-index.html")
 
 
 if __name__ == "__main__":
